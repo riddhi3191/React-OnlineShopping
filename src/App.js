@@ -9,13 +9,14 @@ import SingleProduct from './pages/SingleProduct'
 import Cart from './pages/CartPage'
 import NavBar from './components/Navbar/Navbar'
 import Footer from './components/Footer'
+import Layout from './components/Layout/Layout';
 
 class App extends Component {
   render(){
     return(
       <Fragment>
         {/* navbar, cart, footer, sidebar */}
-        <NavBar />
+        <Layout>
         <Switch>
           <Route path="/" exact component={Home}></Route>
           <Route path="/about" component={About}></Route>
@@ -23,9 +24,8 @@ class App extends Component {
           <Route path="/product/:id" exact component={SingleProduct}></Route>
           <Route path="/Cart" exact component={Cart}></Route>
           <Route  component={Default}></Route>
-
-
         </Switch>
+        </Layout>
         <Footer />
       </Fragment>
     )
