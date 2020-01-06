@@ -2,16 +2,43 @@ import React,{Component, Fragment} from 'react';
 import './App.css';
 import {Route, Switch} from 'react-router-dom'
 import Home from './pages/HomePage';
-import About from './pages/AboutPage'
 import Default from './pages/Default'
 import Products from './pages/ProductsPage'
 import SingleProduct from './pages/SingleProduct'
 import Cart from './pages/CartPage'
-import NavBar from './components/Navbar/Navbar'
 import Footer from './components/Footer'
 import Layout from './components/Layout/Layout';
+import Login from './components/Login/Login'
+import fire from './Config/Fire'
+
+
 
 class App extends Component {
+
+  constructor(props){
+    super(props);
+    this.state = {
+      user : {}
+    }
+  }
+
+
+  componentDidMount () {
+    this.authListener();
+  }
+
+  authListener (){
+    fire.auth().onAuthStateChanged((user) => {
+      console.log(user);
+      if(user) {
+        this.setState({user: user});
+      }
+      else{
+        this.setState({user:null})
+      }
+    })
+  }
+
   render(){
     return(
       <Fragment>
@@ -19,12 +46,13 @@ class App extends Component {
         <Layout>
         <Switch>
           <Route path="/" exact component={Home}></Route>
-          <Route path="/about" component={About}></Route>
-          <Route path="/Products" component={Products}></Route>
+         {this.state.user ?  <Products/> : <Login/>  }
+         
           <Route path="/product/:id" exact component={SingleProduct}></Route>
           <Route path="/Cart" exact component={Cart}></Route>
           <Route  component={Default}></Route>
         </Switch>
+        
         </Layout>
         <Footer />
       </Fragment>
