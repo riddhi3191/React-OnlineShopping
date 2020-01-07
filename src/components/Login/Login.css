@@ -2,11 +2,9 @@
     margin: 20px auto;
     width: 80%;
     text-align: center;
-    box-shadow: 0 2px 3px #6168c5;
-    border: 1px solid #6168c5;
     padding: 10px;
     box-sizing: border-box;
-    background-color: #4e918d;
+    
     font-style: italic;
 }
 
@@ -33,3 +31,7 @@
     margin: 8px 8px;
     size: 10px;
 }
+
+.defaultProps = {
+    img: defaultBcg
+  };

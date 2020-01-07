@@ -3,6 +3,8 @@ import fire from '../../Config/Fire'
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router'
 import './Login.css'
+import styled from 'styled-components'
+import LoginHero from './LoginHero'
 
 
 class Login extends Component {
@@ -32,7 +34,7 @@ class Login extends Component {
         }).catch((error) => {
             console.log(error);  
         });
-        this.props.history.push('/products');
+        this.props.history.push('/');
     }
     handleChange (e) {
         this.setState({ [e.target.name] : e.target.value})
@@ -47,7 +49,9 @@ class Login extends Component {
     }
     render() {
         return (
-            <div>
+            <div >
+            <LoginHero title="Please login" max="true">
+
                 <form className="ContactData">
                     <label for="inputEmail" className="Label" >Email Address</label>
                     <input  className="Input" value={this.state.email} 
@@ -70,9 +74,13 @@ class Login extends Component {
                     <button type="submit" onClick={this.login}>LOGIN</button>
                     <button onClick={this.signup} style={{marginLeft : '25px'}}>SIGNUP</button>
                 </form>
+                </LoginHero>
             </div>
         )
     }
 }
+
+
+
 
 export default withRouter(Login)
