@@ -6,7 +6,7 @@ import Default from './pages/Default'
 import Products from './pages/ProductsPage'
 import SingleProduct from './pages/SingleProduct'
 import Cart from './pages/CartPage'
-import Footer from './components/Footer'
+import Footer from './components/Footer/Footer'
 import Layout from './components/Layout/Layout';
 import Login from './components/Login/Login'
 import fire from './Config/Fire'
@@ -47,7 +47,7 @@ class App extends Component {
         <Switch>
           <Route path="/" exact component={Home}></Route>
          {this.state.user ?  <Products/> : <Login/>  }
-         
+
           <Route path="/product/:id" exact component={SingleProduct}></Route>
           <Route path="/Cart" exact component={Cart}></Route>
           <Route  component={Default}></Route>

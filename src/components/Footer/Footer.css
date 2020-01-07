@@ -1,0 +1,7 @@
+.footer{
+    background: var(--darkGrey);
+    color: var(--mainWhite);
+    text-align: center;
+    text-decoration-style: solid;
+    margin-top: 600px;
+}
