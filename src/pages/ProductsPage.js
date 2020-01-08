@@ -1,14 +1,28 @@
-import React, { Component } from 'react'
+import React from "react";
+import { ProductConsumer } from "../context";
+import Title from "../components/Title"
+import Product from '../components/Product'
+import './Productpage.css'
 
-export default class ProductsPage extends Component {
-    
-    render() {
+export default function Products() {
+  return (
+    <ProductConsumer>
+      {value => {
+        const { filteredProducts } = value;
         return (
-            <div>
-                <h1>I am from product page</h1>
-                
+            <div className="container1">
+              {/* title */}
+              <Title center title="Our products" />
+              {/* products */}
+              <div className="product">
+                {filteredProducts.map(product => {
+                  return  <div className="xyz"><Product key={product.id} product={product} /> </div>
+                })}
+              </div>
             </div>
-        )
-    }
+         
+        );
+      }}
+    </ProductConsumer>
+  );
 }
-

@@ -7,9 +7,6 @@ import fire from '../Config/Fire';
 export default class HomePage extends Component{
     constructor(props){
         super(props);
-        this.state={
-
-        }
         this.logout = this.logout.bind(this)
     }
 

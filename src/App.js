@@ -3,7 +3,7 @@ import './App.css';
 import {Route, Switch} from 'react-router-dom'
 import Default from './pages/Default'
 
-import SingleProduct from './pages/SingleProduct'
+import SingleProductPage from './pages/SingleProduct'
 import CartPage from './pages/CartPage'
 import Footer from './components/Footer/Footer'
 import Login from './components/Login/Login'
@@ -51,7 +51,7 @@ class App extends Component {
           <Route path="/" exact component={HomePage}></Route>
          
           <Route path="/products" exact component={ProductsPage} />
-          <Route path="/product/:id" exact component={SingleProduct}></Route>
+          <Route path="/products/:id" exact component={SingleProductPage}></Route>
           <Route path="/cart" exact component={CartPage}></Route>
           {this.state.user ?  <HomePage/> : <Login/>  }
           <Route  component={Default}></Route>

@@ -1,0 +1,19 @@
+             
+.container1{
+    width:400px;
+}        
+
+.product{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px; 
+    margin-left:50px;
+    
+    /* display: flex;
+    margin: 3px; */
+}
+
+.xyz{
+    padding:15px;
+}
+
