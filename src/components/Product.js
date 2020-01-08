@@ -7,11 +7,12 @@ import "./Product.css";
 
 export default function Product({ product }) {
 return (
-    <ProductConsumer>
+    
+    <ProductConsumer >
     {value => {
         const { addToCart, setSinglePoduct } = value;
         return (
-        <ProductWrapper className="container">
+        <ProductWrapper style={{background: "#e9f5f4"}} className="container">
             <div className="card">
             <div className="img-container">
                 <img
@@ -50,12 +51,12 @@ return (
 
 const ProductWrapper = styled.div`
   .card {
-    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 7px 5px 0px 0px rgba(151,171,184,0.32);
     transition: var(--mainTransition);
     height: 50%;
   }
   .card:hover {
-    box-shadow: 7px 10px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 6px 5px 29px 0px rgba(65,156,105,1);
     cursor: pointer;
   }
   .card-img-top {

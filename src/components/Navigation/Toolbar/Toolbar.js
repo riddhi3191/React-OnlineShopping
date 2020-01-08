@@ -9,7 +9,6 @@ import {ProductConsumer} from '../../../context';
 
 
 export default class Toolbar extends Component {
-    
     render(){
         return (
            <ProductConsumer>
@@ -17,11 +16,11 @@ export default class Toolbar extends Component {
                 const { cartItems, handleSideDrawer, handleCart} = value;
                 return(
                     <header className="Toolbar">
-                    <div><FaBars className="nav-icon" onClick={handleSideDrawer}/></div>
+                    <div style={{color:"#449187"}} ><FaBars className="nav-icon"  onClick={handleSideDrawer}/></div>
                     <div ><img src={logo} alt="logo"/></div>
-                    <div>SEARCH</div>
-                    <div><Link to="/login">LOGIN</Link></div>
-                    <div className="nav-cart" style={{float:"right"}}><FaCartPlus className="nav-icon" onClick={handleCart}/>
+                    <div style={{color:"#449187"}}>SEARCH</div>
+                    <div><Link to="/login" style={{textDecoration: 'none',color:"#449187"}}>LOGIN</Link></div>
+                    <div className="nav-cart" style={{float:"right", color:"#449187"}}><FaCartPlus className="nav-icon" onClick={handleCart}/>
                         <div className="cart-item">
                             {cartItems}
                         </div>

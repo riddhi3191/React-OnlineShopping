@@ -12,7 +12,7 @@ export default function Products() {
         return (
             <div className="container1">
               {/* title */}
-              <Title center title="Our products" />
+              <Title center title="Exclusive products" />
               {/* products */}
               <div className="product">
                 {filteredProducts.map(product => {

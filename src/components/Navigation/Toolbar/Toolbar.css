@@ -4,13 +4,14 @@
     position: relative;
     top: 0;
     left: 0;
-    background-color: #757b8d;
+    background-color: #d0d2ed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10px;
     box-sizing: border-box;
     z-index: 90;
+    font-size: 1.5rem;
 }
 
 .Toolbar nav{
@@ -21,6 +22,11 @@
 .nav-icon{
     font-size: 1.5rem;
     cursor: pointer;
+}
+.nav-icon:hover{
+    font-size: 1.5rem;
+    cursor: pointer;
+    
 }
 
 .nav-cart{

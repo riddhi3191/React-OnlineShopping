@@ -39,7 +39,7 @@ body{
   text-decoration :none;
 }
 .main-link:hover{
-background: var(var(--primaryColor));
+background: var(--primaryColor);
 text-decoration: none;
 color: var(--primaryColor);
 outline-color: var(--primaryColor);

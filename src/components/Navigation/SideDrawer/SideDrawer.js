@@ -16,6 +16,7 @@ export default function SideDrawer() {
                                 <li key={link.id}>
                                     <Link to={link.path}
                                     className="sideDrawer-link"
+                                    style={{textDecoration: 'none'}}
                                     onClick={handleSideDrawer}>
                                     {link.text}
                                     </Link>
@@ -38,7 +39,7 @@ width: 100%;
 height: 100%;
 background: var(--mainGrey);
 z-index: 1;
-border-right: 4px solid #a84462;
+border-right: 4px solid #449187;
 transition: var(--mainTransition);
 transform: ${props => (props.show ? "translateX(0)" : "translateX(-100%)")};
 ul {
@@ -55,7 +56,7 @@ ul {
   transition: var(--mainTransition);
 }
 .sideDrawer-link:hover {
-  background: var(--primaryColor);
+  background: #449187;
   color: var(--mainWhite);
   padding: 0.5rem 1.5rem 0.5rem 2.5rem;
   text-decoration: none;

@@ -6,7 +6,7 @@
   height: 100%;
   background: var(--mainGrey);
   z-index: 1;
-  border-right: 4px solid var(--primaryColor);
+  border-right: 4px solid #449187;
   transition: var(--mainTransition);
   text-decoration :none;
   /*transform: `${props => (props.show ? "translateX(0)" : "translateX(-100%)")}`;*/
@@ -28,12 +28,11 @@
     text-decoration :none;
   }
   .sidebar-link:hover {
-    background: var(--primaryColor);
+    background: #449187;
     color: var(--mainWhite);
     padding: 0.5rem 1.5rem 0.5rem 2.5rem;
     text-decoration: none;
   }
   @media (min-width: 576px) {
     width: 20rem;
-    text-decoration :none
   }
