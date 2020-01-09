@@ -3,7 +3,6 @@ import fire from '../../Config/Fire'
 import PropTypes from 'prop-types'
 import { withRouter } from 'react-router'
 import './Login.css'
-import styled from 'styled-components'
 import LoginHero from './LoginHero'
 
 

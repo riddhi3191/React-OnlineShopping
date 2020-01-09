@@ -6,7 +6,7 @@ export default function Cart() {
     return (
         <ProductConsumer>
             {value => {
-                const { cartOpen, closeCart, cart} =value;
+                const { cartOpen, closeCart} =value;
                 return(
                     <CartWrapper show={cartOpen} onClick={closeCart}>
                         <p>cart items</p>

@@ -49,9 +49,8 @@ class App extends Component {
       <Cart />
         <Switch>
           <Route path="/" exact component={HomePage}></Route>
-         
-          <Route path="/products" exact component={ProductsPage} />
           <Route path="/products/:id" exact component={SingleProductPage}></Route>
+          <Route path="/products" exact component={ProductsPage} />
           <Route path="/cart" exact component={CartPage}></Route>
           {this.state.user ?  <HomePage/> : <Login/>  }
           <Route  component={Default}></Route>
