@@ -1,19 +1,11 @@
-.container1{
-    width:400px;
-}        
 
 .product{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 20px; 
+    grid-gap: 40px; 
     margin-left:50px;
+    float: left;
     
     /* display: flex;
     margin: 3px; */
 }
-
-.xyz{
-    padding:25px;
-}
-
-

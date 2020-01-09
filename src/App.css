@@ -41,6 +41,6 @@ body{
 .main-link:hover{
 background: var(--primaryColor);
 text-decoration: none;
-color: var(--primaryColor);
+color: white;
 outline-color: var(--primaryColor);
 }

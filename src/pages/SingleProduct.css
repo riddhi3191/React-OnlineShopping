@@ -1,0 +1,14 @@
+       
+.product{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px; 
+    margin-left:50px;
+}
+.data-container{
+    padding:70px;
+    width: 1000px;
+    text-decoration: solid;
+    text-decoration-color: lavender;
+    text-transform: capitalize;
+}

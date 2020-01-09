@@ -1,9 +1,8 @@
 import React from 'react'
 
-export default function CartPage() {
+export default function CartItem() {
     return (
         <div>
-        <h1>I am from Cart Page</h1>
             
         </div>
     )

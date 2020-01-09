@@ -2,6 +2,7 @@ import React from 'react'
 import {ProductConsumer} from '../../../context'
 import styled from 'styled-components'
 
+
 export default function Cart() {
     return (
         <ProductConsumer>
@@ -9,7 +10,7 @@ export default function Cart() {
                 const { cartOpen, closeCart} =value;
                 return(
                     <CartWrapper show={cartOpen} onClick={closeCart}>
-                        <p>cart items</p>
+                        <ul></ul>
                     </CartWrapper>
                 )
             }}

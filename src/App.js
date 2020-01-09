@@ -4,7 +4,7 @@ import {Route, Switch} from 'react-router-dom'
 import Default from './pages/Default'
 
 import SingleProductPage from './pages/SingleProduct'
-import CartPage from './pages/CartPage'
+import CartPage from './pages/CartPage/CartPage'
 import Footer from './components/Footer/Footer'
 import Login from './components/Login/Login'
 import fire from './Config/Fire'

@@ -144,6 +144,29 @@ class ProductProvider extends Component {
 
     }
 
+    //cart page functionality for increment items
+    increment = (id) => {
+        console.log(id);
+        
+    }
+
+    //cart page functionality for decrement items
+    decrement = (id) => {
+        console.log(id);
+        
+    }
+
+    //cart page functionality for remove items
+    removeItem = (id) => {
+        console.log(id);
+        
+    }
+
+    //clear cart
+    clearCart = () => {
+
+    }
+
     //function for handle sideDrawer 
     handleSideDrawer = () => {
         this.setState({sidedrawerOpen: !this.state.sidedrawerOpen})
@@ -174,7 +197,11 @@ class ProductProvider extends Component {
                 closeCart : this.closeCart,
                 openCart : this.openCart,
                 addToCart: this.addToCart,
-                setSingleProduct: this.setSingleProduct
+                setSingleProduct: this.setSingleProduct,
+                increment: this.increment,
+                decrement: this.decrement,
+                removeItem: this.removeItem,
+                clearCart:this.clearCart
                }}>
                 {this.props.children}
             </ProductContext.Provider>
