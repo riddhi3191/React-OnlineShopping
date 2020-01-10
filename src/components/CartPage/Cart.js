@@ -10,8 +10,8 @@ export default function Cart() {
        
         <div >
             <Title title="cart items" center/>
-            <CartColumn/>
-            
+            <CartColumn/><br/>
+            <CartTotal/>
         </div>
     )
 }

@@ -1,0 +1,24 @@
+.button{
+    border-block-color: green;
+    text-transform: capitalize;
+    width: 120px;
+    height: 30px;
+    color: rgb(196, 100, 93);
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+.product{
+    
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+ 
+}
+
+
+.subtotal{
+    text-align: center;
+    color: lightseagreen;
+}

@@ -2,7 +2,7 @@
 .product{
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 40px; 
+    grid-gap: 50px; 
     margin-left:50px;
     float: left;
     
